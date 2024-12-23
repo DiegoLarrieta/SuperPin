@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header is above other content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.header__logo img {
+  height: 10vw; /* Adjust the size of the logo relative to the viewport width */
+  max-height: 150px; /* Ensure the logo doesn't get too large */
+}
+
+.header__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  font-family: "Iceland", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px; /* Adjust the font size as needed */
+  line-height: 1; /* Reduce the line height to bring the titles closer */
+  margin: 0; /* Remove any default margin */
+}
+
+.header__icons {
+  display: flex;
+  gap: 15px;
+  padding-right: 50px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-image {
+  height: 24px; /* Ajusta el tamaño de los iconos */
+  width: 24px;
+}
+
+.lottie-container {
+  filter: invert(1); /* Invert colors to make the animation white */
+}
